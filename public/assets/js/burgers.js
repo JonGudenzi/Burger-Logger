@@ -14,8 +14,6 @@ $(function() {
         data: burger
       }).then(
         function() {
-          console.log("changed sleep to", burgers);
-          // Reload the page to get the updated list
           location.reload();
         }
       );
