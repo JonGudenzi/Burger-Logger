@@ -10,20 +10,21 @@ router.get("/", function(req, res) {
     var hbsObject = {
       burgers: data
     };
-    // console.log(hbsObject);
+    // console.log(hbsObject, "hello");
     res.render("index", hbsObject);
   });
 });
-
+//////////////////////////////////////////////////////////////////////////
 // This will POST the burgers to the db
-router.post("/api/burger", function(req, res)
- { console.log(req.body);
+router.post("/api/burger", function(req, res) { 
+    // console.log(req.body);
   burger.create(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
    
     res.json({ id: result.insertId });
+    
   });
 });
-
+/////////////////////////////////////////////////////////////////////////
 router.put("/api/burger/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 

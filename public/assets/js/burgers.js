@@ -2,19 +2,19 @@
 $(function() {
     $(".burgers").on("click", function(event) {
       var id = $(this).data("id");
-      var newSleep = $(this).data("newsleep");
+      var burgers = $(this).data("burgers");
   
-      var newSleepState = {
-        sleepy: newSleep
+      var burgers = {
+        devoured: burgers
       };
   
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newSleepState
+        data: burger
       }).then(
         function() {
-          console.log("changed sleep to", newSleep);
+          console.log("changed sleep to", burgers);
           // Reload the page to get the updated list
           location.reload();
         }
@@ -38,7 +38,7 @@ $(function() {
         data: burger
       }).then(
         function() {
-          console.log("created new cat");
+          console.log("created new burger");
           // Reload the page to get the updated list
           location.reload();
         }
