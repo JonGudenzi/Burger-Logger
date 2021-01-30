@@ -4,41 +4,38 @@ $(function() {
       var id = $(this).data("id");
       var burgers = $(this).data("burgers");
   
-      var burgers = {
-        devoured: burgers
+      var newBurgers = {
+        burger_name: $("newBurgers").val() == undefined ? " " : $("#newBurgers").val().trim(),
+        devoured: 0
       };
   
-      // Send the PUT request.
+  
       $.ajax("/api/burgers/" + id, {
-        type: "PUT",
-        data: burger
+        type: "POST",
+        data: newBurgers
       }).then(
         function() {
-          console.log("changed sleep to", burgers);
+          console.log("new burger added");
           // Reload the page to get the updated list
           location.reload();
         }
       );
     });
   
-    $(".create-form").on("submit", function(event) {
-      // Make sure to preventDefault on a submit event.
-
-      console.log("we clicked here");
+    $(".create-form").on("submit", (event) => {
+      
       event.preventDefault();
   
-      var burger = {
+      var eatenDevoured = {
         burger_name: $("#burger").val().trim(),
-        devoured: 0
+        devoured: 1
       };
-  
-      // Send the POST request.
-      $.ajax("/api/burger", {
-        method: "POST",
-        data: burger
+      $.ajax("/api/burgers/" + id, {
+        type: "PUT",
+        data: eatenDevoured
       }).then(
         function() {
-          console.log("created new burger");
+          console.log("Burger is devoured");
           // Reload the page to get the updated list
           location.reload();
         }
