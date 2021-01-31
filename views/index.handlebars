@@ -5,70 +5,40 @@
 
 
 <div class="container">
-    <div class="burger-list">
-        <h2>Newly Constructed Burgers</h2>
-          <div class="newBurger-input">
-            <ul>
-            {{#each burgers}}
-              {{#unless devoured}}
-                <div id="newBurger-input" name="burger_name">
-                  {{id}} - {{burger_name}}
-                    <button id="devour-burger" class="devour-burger btn-warning" data-id="{{this.id}}">Devour Burger!</button>
-                     {{!-- data-devour="{{devoured}}" --}}
-                </div>
-              {{/unless}}
-            {{/each}}
-            </ul>
-          </div>
+  <div class="burger-list">
     
-        <h2>Devoured Burgers!</h2>
-               {{#each burgers}}
-                  {{#if devoured}}
-                    <div class=".create-form">
-                         {{burger_name}} 
-                    </div>
-                  {{/if}}
-                {{/each}}
+    
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <div id="newBurger-input" name="burger_name">
+          {{id}} - {{burger_name}}
+          <button id="devour-burger" class="devour-burger btn-warning" data-id="{{this.id}}">Devour Burger!</button>
+        </div>
+        {{/unless}}
+        {{/each}}
+      </ul>
 
-
-
-
-
-
-
-{{!-- <ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      <li>
-      {{id}} - {{burger_name}}
-      <button id="newBurger" class="devour-burger">Devour Burger</button>
-      </li>
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers devoured</h2>
-
-<ul>
-  {{#each burgers}}
+    <h2>Devoured Burgers!</h2>
+    <ul>
+    {{#each burgers}}
     {{#if devoured}}
-      <div id="devouredBurger">
+    <li class=".create-form">
       {{burger_name}}
-      </div>
+    </li>
     {{/if}}
-  {{/each}}
-</ul> --}}
+    {{/each}}
+    </ul>
+
+    <form class="create-form">
+      <div class="form-group">
+        <label for="burger">burger Name:</label>
+        <input type="text" id="burger" name="name">
 
 
-<form class="create-form">
-  <div class="form-group">
-    <label for="burger">burger Name:</label>
-    <input type="text" id="burger" name="name">
-  
+      </div>
 
-  </div>
+      <button type="submit">Add burger</button>
 
-  <button type="submit">Add burger</button>
 
-  
-</form>
+    </form>
