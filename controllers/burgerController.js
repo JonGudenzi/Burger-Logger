@@ -18,24 +18,17 @@ router.get("/", (req, res) => {
 // This will POST the burgers to the db
 router.post("/api/burger", (req, res) => {
   burger.create(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], (result) => {
-
     res.json({ id: result.insertId });
-
   });
 });
 /////////////////////////////////////////////////////////////////////////
 router.put("/api/burgers/:id", (req, res) => {
   var condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
-
-  burger.updateOne(
-    {
-      devoured: req.body.devoured
-    },
-
+  burger.update({ devoured: req.body.devoured },
     condition,
     (result) => {
+
       if (result.changedRows === 0) {
 
         return res.status(404).end();
