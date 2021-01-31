@@ -1,24 +1,73 @@
 <h1>Burgers</h1>
 
-<h2>Burgers devoured</h2>
+<h2>Burgers not devoured</h2>
 
-<ul>
+
+
+<div class="container">
+    <div class="burger-list">
+      <div class="row">
+        <h2>Newly Constructed Burgers</h2>
+        <div class="col-sm-6 p-3">
+          <div class="newBurger-input panel panel-default float-left">
+            <ul>
+            {{#each burgers}}
+              {{#unless devoured}}
+                <div id="newBurger-input" name="burger_name">
+                  {{id}} - {{burger_name}}
+                    <button id="devour-burger" class="devour-burger btn-warning" data-id="{{this.id}}">Devour Burger!</button>
+                     {{!-- data-devour="{{devoured}}" --}}
+                </div>
+              {{/unless}}
+            {{/each}}
+            </ul>
+          </div>
+        </div>
+    </div>
+
+        <h2>Devoured Burgers!</h2>
+        <div class="col-sm-6 p-4">
+            <div class="panel panel-default float-right">
+               {{#each burgers}}
+                  {{#if devoured}}
+                    <div class=".create-form">
+                         {{burger_name}} 
+                    </div>
+                  {{/if}}
+                {{/each}}
+
+        </div>
+      
+    </div>
+
+
+
+
+
+
+
+{{!-- <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burger-block this devoured=true}}
+      <li>
+      {{id}} - {{burger_name}}
+      <button id="newBurger" class="devour-burger">Devour Burger</button>
+      </li>
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burgers not devoured</h2>
+<h2>Burgers devoured</h2>
 
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burger-block this devoured=false}}
+      <div id="devouredBurger">
+      {{burger_name}}
+      </div>
     {{/if}}
   {{/each}}
-</ul>
+</ul> --}}
 
 
 <form class="create-form">

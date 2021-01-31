@@ -21,16 +21,16 @@ router.post("/api/burger", (req, res) => {
   burger.create(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], (result) => {
    
     res.json({ id: result.insertId });
-    
+
   });
 });
 /////////////////////////////////////////////////////////////////////////
-router.put("/api/devoured/:id", (req, res) => {
+router.put("/api/burgers/:id", (req, res) => {
   var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
 
-  burger.update(
+  burger.updateOne(
     {
       devoured: req.body.devoured
     },
