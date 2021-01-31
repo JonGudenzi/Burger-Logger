@@ -6,10 +6,8 @@
 
 <div class="container">
     <div class="burger-list">
-      <div class="row">
         <h2>Newly Constructed Burgers</h2>
-        <div class="col-sm-6 p-3">
-          <div class="newBurger-input panel panel-default float-left">
+          <div class="newBurger-input">
             <ul>
             {{#each burgers}}
               {{#unless devoured}}
@@ -22,12 +20,8 @@
             {{/each}}
             </ul>
           </div>
-        </div>
-    </div>
-
+    
         <h2>Devoured Burgers!</h2>
-        <div class="col-sm-6 p-4">
-            <div class="panel panel-default float-right">
                {{#each burgers}}
                   {{#if devoured}}
                     <div class=".create-form">
@@ -35,10 +29,6 @@
                     </div>
                   {{/if}}
                 {{/each}}
-
-        </div>
-      
-    </div>
 
 
 
