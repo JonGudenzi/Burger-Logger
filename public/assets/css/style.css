@@ -1,20 +1,16 @@
+body{
+  background-image: url("https://images.livemint.com/img/2020/01/31/600x338/35f3882e-41a2-11ea-8985-19ece72214db_1580492774843_1580492850883.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
   }
   
-  .label {
-    font-weight: bold;
-  }
   
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
   
-  .form-group {
-    margin-bottom: 5px;
-  }
-  
+ 
+ 
