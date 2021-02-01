@@ -1,10 +1,9 @@
-<div id="topGroup">
-<h1>Burgers</h1>
+<div class="head">
+<h1>Are we adding burgers or Devouring burgers?</h1>
+</div>
 
-<h2>Burgers not devoured</h2>
-<div id="bg">
- 
-
+<div class="newB">
+<h2>New burgers!</h2>
 
 <form class="create-form">
   <div class="form-group">
@@ -14,18 +13,24 @@
   <button type="submit">Add burger</button>
 </form>
 </div>
+<br>
+<br>
 
+
+<div class="newB">
     <ul>
     {{#each burgers}}
     {{#unless devoured}}
     <div id="burger" name="burger_name"></div>
     {{id}} - {{burger_name}}
     <button class="burgers" data-id="{{this.id}}">Devour Burger!</button>
+    
     {{/unless}}
     {{/each}}
     </ul>
+</div>    
 
-<div id="dList">
+<div id="devB">
 <h2>Devoured Burgers!</h2>
     <ul>
       {{#each burgers}}
@@ -36,10 +41,8 @@
       {{/if}}
       {{/each}}
     </ul>
-    </div>
-</div>
-
-
+</div>    
+  
 
     
 
