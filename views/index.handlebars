@@ -1,20 +1,21 @@
 <div class="head">
-<h1>Are we adding burgers or Devouring burgers?</h1>
+<h1>Are we Adding Burgers or Devouring Burgers?</h1>
 </div>
 
+<div id="flexParent">
 <div class="newB">
-<h2>New burgers!</h2>
+  
+<h2>Add a New burger!</h2>
 
 <form class="create-form">
   <div class="form-group">
-    <label for="burger">burger Name:</label>
+    <label for="burger" id="burgerLable">Burger Name:</label>
     <input type="text" id="burger" name="name">
   </div>
-  <button type="submit">Add burger</button>
+  <button id="button" type="submit">Add burger</button>
 </form>
-</div>
 <br>
-<br>
+
 
 
 <div class="newB">
@@ -22,26 +23,32 @@
     {{#each burgers}}
     {{#unless devoured}}
     <div id="burger" name="burger_name"></div>
-    {{id}} - {{burger_name}}
-    <button class="burgers" data-id="{{this.id}}">Devour Burger!</button>
-    
+    <div class="burgerName">
+    {{burger_name}}
+    </div>
+    <button class="burgers" id="buttonStyle" data-id="{{this.id}}">Devour this Burger!</button>
+    <br><br>
     {{/unless}}
     {{/each}}
     </ul>
 </div>    
+</div>
+
 
 <div id="devB">
 <h2>Devoured Burgers!</h2>
-    <ul>
+    <ul id="devouredColor">
       {{#each burgers}}
       {{#if devoured}}
-      <li class=".create-form">
+      <li class=".create-form" >
         {{burger_name}}
       </li>
       {{/if}}
       {{/each}}
     </ul>
 </div>    
+
+</div>
   
 
     
