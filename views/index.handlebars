@@ -1,10 +1,39 @@
-<div class="head">
-<h1>Are we Adding Burgers or Devouring Burgers?</h1>
+
+
+
+
+<div class="jumbotron jumbotron-fluid jumbo">
+  <div class="container">
+    <h1 class="display-4">Are we Adding Burgers or Devouring Burgers?</h1>
+    
+  </div>
 </div>
-<br><br>
-<div id="flexParent">
-<div class="newB">
-  
+
+
+
+<div class="row">
+<div class="col leftContainer">
+  <h2>Fresh Burgers!</h2>
+    <ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+    <div id="burger" name="burger_name"></div>
+    <div class="burgerName">
+    {{burger_name}}
+    
+    <button class="burgers" id="buttonStyle" data-id="{{this.id}}">Devour this Burger!</button>
+    </div>
+    <br><br>
+    {{/unless}}
+    {{/each}}
+    </ul>
+   </div>
+
+
+    <div class="col">
+      
+
+  <div id="addBurgerContainer">
 <h2>Add a New burger!</h2>
 
 <form class="create-form">
@@ -14,28 +43,13 @@
   </div>
   <button id="button" type="submit">Add burger</button>
 </form>
-<br>
-
-
-
-<div class="newB">
-    <ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    <div id="burger" name="burger_name"></div>
-    <div class="burgerName">
-    {{burger_name}}
-    </div>
-    <button class="burgers" id="buttonStyle" data-id="{{this.id}}">Devour this Burger!</button>
-    <br><br>
-    {{/unless}}
-    {{/each}}
-    </ul>
-</div>    
 </div>
+    </div>
 
-
-<div id="devB">
+    
+    <div class="col">
+      
+     
 <h2>Devoured Burgers!</h2>
     <ul id="devouredColor">
       {{#each burgers}}
@@ -48,13 +62,12 @@
     </ul>
 </div>    
 
-</div>
-  
+
+
+
 
     
 
 
-
     
-   
-     
+  </div>

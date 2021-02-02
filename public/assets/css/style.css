@@ -1,13 +1,14 @@
 body{
   background-image: url("https://images.livemint.com/img/2020/01/31/600x338/35f3882e-41a2-11ea-8985-19ece72214db_1580492774843_1580492850883.jpeg");
-  background-size: 100%;
   background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.head{
-  
-  display: block;
-  margin-left: 20%;
+.jumbo{
+  padding-bottom: 20px;
+  margin-left: 200px;
 }
 
 #flexParent{
@@ -20,9 +21,9 @@ body{
 }
 
 #devB{
-  
   margin-left: 50%;
 }
+
 
 #button{
   display: inline-block;
@@ -42,11 +43,10 @@ body{
 
 #buttonStyle{
   display: inline-block;
-  padding: 1px;
   background-image: linear-gradient(rgb(172, 207, 226)60%,rgb(252, 216, 249));
   border-radius: 20px;
   border: turquoise solid 3px;
-  height: 40px;
+  height: 45px;
   text-decoration: none;
 }
 
@@ -55,6 +55,12 @@ body{
   background-image: linear-gradient(rgb(172, 207, 226)60%,rgb(252, 216, 249));
   border-radius: 25px;
   border: turquoise solid 2px;
+  width: 50%;
+}
+
+#buttonStyle:hover{
+  border: rgb(94, 240, 215) solid 5px;
+    opacity: .8;
 }
 
 #burgerLable{
@@ -64,4 +70,32 @@ body{
 
 .burgerName{
   font-size: 25px;
+}
+
+/* ////////////////// */
+
+.row{
+  border: solid purple 2px;
+}
+
+.col{
+  border: solid purple 2px;
+}
+
+.col-5{
+  border: solid purple 2px;
+}
+
+#addBurgerContainer{
+  margin-top: 300px;
+  color: purple;
+  border: black solid 3px;
+  border-radius: 15px;
+  padding: 30px;
+  
+  
+}
+
+.leftContainer{
+  margin-left: 30px;
 }
