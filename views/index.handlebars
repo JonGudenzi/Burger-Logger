@@ -1,4 +1,3 @@
-
 <div class="jumbotron jumbotron-fluid jumbo">
   <div class="container">
     <h1 class="display-4">Are we Making Burgers or Devouring Burgers?</h1>
@@ -6,51 +5,44 @@
 </div>
 
 <div class="row">
-<div class="col-md-3 leftContainer">
-  <h2>Fresh Burgers!</h2>
+  <div class="col-md-3 leftContainer">
+    <h2>Fresh Burgers!</h2>
     <ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    <div id="burgers" name="burger_name"></div>
-    <div class="burgerName">
-    {{burger_name}}
-    <button class="burgers" id="buttonStyle" data-id="{{this.id}}">Devour this Burger!</button>
-    </div>
-    {{/unless}}
-    {{/each}}
+      {{#each burgers}}
+      {{#unless devoured}}
+      <div id="burgers" name="burger_name"></div>
+      <div class="burgerName">
+        {{burger_name}}
+        <button class="burgers" id="buttonStyle" data-id="{{this.id}}">Devour this Burger!</button>
+      </div>
+      {{/unless}}
+      {{/each}}
     </ul>
-   </div>
-
-
-    <div class="col-md-4">
-      
-
-  <div id="addBurgerContainer">
-<h2>Make a New burger!</h2>
-
-<form class="create-form">
-  <div class="form-group">
-    <label for="burger" id="burgerLable">Burger Name:</label>
-    <input type="text" id="burger" name="name">
   </div>
-  <button id="button" type="submit">Add burger</button>
-</form>
-</div>
+
+  <div class="col-md-4">
+    <div id="addBurgerContainer">
+      <h2>Make a New burger!</h2>
+      <form class="create-form">
+        <div class="form-group">
+          <label for="burger" id="burgerLable">Burger Name:</label>
+          <input type="text" id="burger" name="name">
+        </div>
+        <button id="button" type="submit">Add burger</button>
+      </form>
     </div>
+  </div>
 
-
-</div>
-    
-    <div class="col-md-4">
-<h2 id="rightH2">Devoured Burgers!</h2>
+  <div class="col-md-4">
+    <h2 id="rightH2">Devoured Burgers!</h2>
     <ul id="devouredColor">
       {{#each burgers}}
       {{#if devoured}}
-      <li class=".create-form" >
+      <li class=".create-form">
         {{burger_name}}
       </li>
       {{/if}}
       {{/each}}
     </ul>
-</div>    
-  
+  </div>
+</div>

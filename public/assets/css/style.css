@@ -1,10 +1,9 @@
 body{
   background-image: url("../img/larry.jpg");
   background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
     background-size: cover;
-    
 }
 
 .jumbo{
@@ -17,14 +16,12 @@ body{
 }
 
 .newB{
-  /* margin-left: 30px; */
   margin-top: 0%;
 }
 
 #devB{
   margin-left: 50%;
 }
-
 
 #button{
   display: inline-block;
@@ -53,16 +50,11 @@ body{
 
 #devouredColor{
   color: black;
-  /* background-image: linear-gradient(rgb(172, 207, 226)60%,rgb(252, 216, 249)); */
+  background-image: linear-gradient(rgb(172, 207, 226)60%,rgb(252, 216, 249));
   border-radius: 25px;
   border: turquoise solid 2px;
   width: 50%;
   margin-left: 100px;
-  background-image: url("../img/beachBurger.jpg");
-  background-repeat: no-repeat;
-    /* background-position: bottom; */
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 #buttonStyle:hover{
@@ -79,16 +71,6 @@ body{
   font-size: 25px;
 }
 
-/* ////////////////// */
-.row{
-  border: purple solid 2px;
-}
-
-.col-md-4{
-  border: purple solid 2px;
-}
-
-
 #addBurgerContainer{
   
   margin-top: 50px;
@@ -99,7 +81,6 @@ body{
   padding: 30px;
   width: 350px;
 }
-
 
 .leftContainer{
   margin-left: 50px;
