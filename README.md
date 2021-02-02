@@ -10,6 +10,8 @@
   ## Description
   Burger-Logger allows a user to log new burgers and burgers that have been devoured. The user can add any burger they would like and as many as they like.  The burgers that are entered will be listed on the left side of the screen along with a button to devour each burger.  When the user decides to devour the burger they can click the devour button and that burger will be listed on the right side of the screen in the devoured list.  To make these actions work this application uses the MVC design, Node, Express, Handlebars, and MySQL.
 
+  <img src="public\assets\img\burgerApp.PNG" width="500" height="250">
+
   ## Table of Contents
 
   * [Installation](#Installation)
