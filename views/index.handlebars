@@ -1,16 +1,9 @@
 
-
-
-
 <div class="jumbotron jumbotron-fluid jumbo">
   <div class="container">
-    <h1 class="display-4">Are we Adding Burgers or Devouring Burgers?</h1>
+    <h1 class="display-4">Are we Making Burgers or Devouring Burgers?</h1>
   </div>
 </div>
-
-
-
-
 
 <div class="row">
 <div class="col-md-3 leftContainer">
@@ -18,13 +11,11 @@
     <ul>
     {{#each burgers}}
     {{#unless devoured}}
-    <div id="burger" name="burger_name"></div>
+    <div id="burgers" name="burger_name"></div>
     <div class="burgerName">
     {{burger_name}}
-    
     <button class="burgers" id="buttonStyle" data-id="{{this.id}}">Devour this Burger!</button>
     </div>
-    <br><br>
     {{/unless}}
     {{/each}}
     </ul>
@@ -35,7 +26,7 @@
       
 
   <div id="addBurgerContainer">
-<h2>Add a New burger!</h2>
+<h2>Make a New burger!</h2>
 
 <form class="create-form">
   <div class="form-group">
@@ -47,11 +38,11 @@
 </div>
     </div>
 
+
+</div>
     
     <div class="col-md-4">
-      
-     
-<h2>Devoured Burgers!</h2>
+<h2 id="rightH2">Devoured Burgers!</h2>
     <ul id="devouredColor">
       {{#each burgers}}
       {{#if devoured}}
@@ -62,4 +53,4 @@
       {{/each}}
     </ul>
 </div>    
-  </div>
+  
