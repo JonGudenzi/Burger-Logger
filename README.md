@@ -4,6 +4,9 @@
 
 [CLICK HERE to view the Burger-Logger Repo!](https://github.com/JonGudenzi/Burger-Logger)
 
+[You can also find these links in my Portfolio that you can view by clicking this link](https://jongudenzi.github.io/Portfolio/)
+
+
   ## MIT License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -50,4 +53,5 @@ If you have any questions please email me at  [jongudenzi@gmail.com](mailto:jong
 <br>
 
 If you would like to see more of my work you can check out my GitHub profile at [GitHub Profile](https://github.com/JonGudenzi)
+
 
