@@ -8,7 +8,6 @@ body{
 
 .jumbo{
   padding-bottom: 20px;
-  margin-left: 200px;
 }
 
 #flexParent{
@@ -72,11 +71,10 @@ body{
 }
 
 #addBurgerContainer{
-  
   margin-top: 50px;
   color: turquoise;
   background-color: black;
-  border: black solid 3px;
+  border: turquoise solid 3px;
   border-radius: 100px;
   padding: 30px;
   width: 250px;
