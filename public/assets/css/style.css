@@ -16,7 +16,7 @@ body{
 }
 
 .newB{
-  margin-left: 30px;
+  /* margin-left: 30px; */
   margin-top: 0%;
 }
 
@@ -56,6 +56,7 @@ body{
   border-radius: 25px;
   border: turquoise solid 2px;
   width: 50%;
+  margin-left: 100px;
 }
 
 #buttonStyle:hover{
@@ -73,29 +74,25 @@ body{
 }
 
 /* ////////////////// */
-
 .row{
-  border: solid purple 2px;
+  border: purple solid 2px;
 }
 
-.col{
-  border: solid purple 2px;
+.col-md-4{
+  border: purple solid 2px;
 }
 
-.col-5{
-  border: solid purple 2px;
-}
 
 #addBurgerContainer{
-  margin-top: 300px;
+  margin-top: 200px;
   color: purple;
   border: black solid 3px;
-  border-radius: 15px;
+  border-radius: 100px;
   padding: 30px;
   
   
 }
 
 .leftContainer{
-  margin-left: 30px;
+  margin-left: 50px;
 }
