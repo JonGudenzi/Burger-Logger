@@ -44,7 +44,7 @@ body{
   background-image: linear-gradient(rgb(172, 207, 226)60%,rgb(252, 216, 249));
   border-radius: 20px;
   border: turquoise solid 3px;
-  height: 45px;
+  height: 32px;
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ body{
 }
 
 .burgerName{
-  font-size: 25px;
+  font-size: 18px;
 }
 
 #addBurgerContainer{

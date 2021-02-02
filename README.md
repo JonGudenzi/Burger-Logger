@@ -1,6 +1,8 @@
 # Burger-Logger
 
-[CLICK HERE to use the Burger-Logger!](https://burger-logger-gudenzi.herokuapp.com/)
+[CLICK HERE to launch the Burger-Logger app!](https://burger-logger-gudenzi.herokuapp.com/)
+
+[CLICK HERE to view the Burger-Logger Repo!](https://github.com/JonGudenzi/Burger-Logger)
 
   ## MIT License
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
