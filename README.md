@@ -4,7 +4,7 @@
 
 [CLICK HERE to view the Burger-Logger Repo!](https://github.com/JonGudenzi/Burger-Logger)
 
-[You can also find these links in my Portfolio that you can view by clicking this link](https://jongudenzi.github.io/Portfolio/)
+[You can also find these links in my Portfolio that you can view by clicking this link](https://jongudenzi.github.io/2021portfolio/)
 
 
   ## MIT License
